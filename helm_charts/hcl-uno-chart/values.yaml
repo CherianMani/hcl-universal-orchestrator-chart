@@ -201,6 +201,10 @@ uno:
       certSecretName: uno-certificate
       # certExtAgtSecretName is the name of the secret of the external agent. This parameter applies if you set useCustomizedCert to true.
       certExtAgtSecretName: uno-certificate-ext-agt
+      # caDuration is the validity period of the CA certificates before expiry. This parameter is applicable when useCustomizedCert parameter is set to false.
+      caDuration: uno-certificate-ext-agt
+      # caRenewBefore is the Specifies the time before the expiry of CA certificates when the certificate manager initiates renewal attempts. This parameter is applicable when useCustomizedCert parameter is set to false.
+      caRenewBefore: 2160h
       # duration is the duration of the certificates before they are set to expire. This parameter applies if you set useCustomizedCert to true.
       duration: 2160h
       # renewBefore is the time before the certificate expires when the certificate manager service begins attempts to renew the certificate. This parameter applies if you set useCustomizedCert to true.
