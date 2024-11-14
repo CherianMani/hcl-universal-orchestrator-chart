@@ -56,6 +56,7 @@ global:
   # For example, if you want to set the active-window.extension value as 10 minutes, add the variable as follows under customEnv:
   # - name: UNO_PLANNING_ACTIVE_WINDOW_EXTENSION
   #   value: PT1M
+  #You can also cutomize the values for UNO_WAITING_JOB_EXPIRE_TIMEOUT and UNO_WAITING_JOB_EXPIRE_FREQUENCY with a value either in seconds or minutes. 
   customEnv:
   #- name: "MY_ENVKEY"
   #  value: "MY_EN_VALUE"
