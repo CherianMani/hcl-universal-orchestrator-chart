@@ -132,10 +132,23 @@ uno:
     tlsInsecure: false
   config:
     license:
-      # Url of flexera license server
-      licenseServerUrl: 
-      # Id of flexera license instance
-      licenseServerId:
+      # Url of the MHS license server
+      licenseServerUrl: https://api.hcltechsw.com
+      # Key to deploy the MHS license server.
+      licenseServerKey:
+      # optional proxy configuration to access the MHS license server.
+      proxy:
+        # The hostname of the proxy server.
+        hostname:
+        # The port of the proxy server.
+        port:
+        # The username to authenticate to the proxy server.
+        username:
+        # The password to authenticate to the proxy server.
+        password:
+    audit:
+        # max number of days to keep audit logs.
+        retentionDays: P400D
     registry:
       # name is the name of your registry.
       name: hclcr.io/uno
