@@ -299,7 +299,20 @@ Run the following command to verify the pods installed in the <uno_namespace>:
    
            kubectl get pods -n <uno_namespace>
 
- **Verify that the default engine connection is created from the Dynamic Workload Console**
+
+### Security and verification for OCLI and UnO agent binaries 
+
+To ensure the integrity and authenticity of the downloaded files, we use GPG (GNU Privacy Guard) encryption. You must have the GPG tool installed on your system to decrypt and verify the files. 
+
+The Orchestration CLI and HCL UnO agent packages are signed with our private key. A corresponding .asc signature file accompanies the downloadable file. You can extract the file and use the public key to decrypt and verify the files. 
+
+For more information on verifying a file with gpg keys, see [GnuPG documentation](https://www.gnupg.org/gph/en/manual.html). 
+
+When you decrypt the files with the public key and if the signature is valid, you can see a message indicating the file is correctly signed and the key ID matches with the public key. If the signature is invalid, you can see an error message, means the file is corrupted. 
+
+By verifying the file, you can ensure that it is not tampered during the download and can confirm the file is genuinely valid. You can download the public key from [here](https://github.com/CherianMani/hcl-universal-orchestrator-chart/blob/task/WA-135255/public_key.gpg.zip).
+ 
+**Verify that the default engine connection is created from the Dynamic Workload Console**
 
 Verifying the default engine connection depends on the network enablement configuration you implement. To determine the URL to be used to connect to the console, follow the procedure for the appropriate network enablement configuration.
 
@@ -606,9 +619,6 @@ For more information about using Grafana dashboards see [Dashboards overview](ht
 
 *  Limited to amd64 platforms.
 *  Anonymous connections are not permitted.
-
-
-For more information about using Grafana dashboards see [Dashboards overview](https://github.com/CherianMani/hcl-universal-orchestrator-chart/blob/task/WA-135255/public_key.gpg.zip)
 
 
 ## Documentation
