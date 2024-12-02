@@ -608,7 +608,7 @@ For more information about using Grafana dashboards see [Dashboards overview](ht
 *  Anonymous connections are not permitted.
 
 
-For more information about using Grafana dashboards see [GPG public key]https://github.com/CherianMani/hcl-universal-orchestrator-chart/blob/task/WA-135255/public_key.gpg.zip).
+For more information about using Grafana dashboards see [Dashboards overview](https://github.com/CherianMani/hcl-universal-orchestrator-chart/blob/task/WA-135255/public_key.gpg.zip)
 
 
 ## Documentation
