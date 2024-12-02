@@ -608,6 +608,9 @@ For more information about using Grafana dashboards see [Dashboards overview](ht
 *  Anonymous connections are not permitted.
 
 
+For more information about using Grafana dashboards see [GPG public key]https://github.com/CherianMani/hcl-universal-orchestrator-chart/blob/task/WA-135255/public_key.gpg.zip).
+
+
 ## Documentation
 
 To access the complete product documentation library for HCL Universal Orchestrator, see [HCL Universal Orchestrator documentation](https://help.hcltechsw.com/UnO/v1.1/index.html).
